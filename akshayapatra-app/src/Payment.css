@@ -1,0 +1,190 @@
+/* Add this CSS in your stylesheet or inside a <style> tag in your component */
+.success-animation {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto;
+}
+
+.checkmark {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto 0;
+    box-shadow: inset 0px 0px 0px #4caf50;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #4caf50;
+    fill: none;
+    animation: stroke .6s cubic-bezier(.65, .05, .36, 1) forwards;
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke .3s cubic-bezier(.65, .05, .36, 1) .4s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #4caf50;
+    }
+}
+
+.payment-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f9f9f9;
+}
+
+.payment-form {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.payment-success {
+    margin-bottom: 10px;
+    color: green;
+}
+
+.payment-error {
+    margin-bottom: 10px;
+    color: red;
+}
+
+.payment-method-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.card-element-container {
+    margin-bottom: 20px;
+}
+
+.card-element {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.upi-input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.payment-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.payment-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.success-animation .checkmark {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #4caf50;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px #4caf50;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.success-animation .checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #4caf50;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.success-animation .checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.4s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #4caf50;
+    }
+}
+
+.total-amount-display {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
